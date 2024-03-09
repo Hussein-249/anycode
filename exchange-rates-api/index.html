@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="index.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- for Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <!-- for Raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    
+    <title>Exchange Rates Mini</title>
+</head>
+
+<body>
+    <h1 id="Title">Exchange Rates Lite</h1>
+    <div id="inputs">
+        <form id="currencyinput" action="" method="get">
+            <label for="basecurrency">Find the price of </label>
+            <input type="text" id="basecurrency"></input>
+            <label for="againstcurrency"> in terms of</label>
+            <input type="text" id="againstcurrency"></input>
+            <button id="clearERButton" type="button" >Clear</button>
+            </form>
+        </div>
+    <div id="temporary-buttons">
+        <button id="erButton" type="button" >Find Exchange Rates</button>
+        </div>
+    <div id="results">
+        </div>
+    <canvas id="rateChart">
+        </canvas>
+    <div id="disclaimerDIV">
+        <p> <b>DISCLAIMER:</b> This web application was built and hosted to implement computer science concepts in practice by producing a deliverable product.
+            This application may not always provide accurate results. These results are produced using an API and they are not verified.
+        </p>
+        </div>
+
+</body>
+</html>
